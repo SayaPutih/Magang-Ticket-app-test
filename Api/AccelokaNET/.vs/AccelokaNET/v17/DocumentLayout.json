@@ -1,0 +1,282 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74EF9D3B-C7CC-4C63-A7C5-730E29599067}|AccelokaDb.Entities\\AccelokaDb.Entities.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokadb.entities\\models\\tiket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74EF9D3B-C7CC-4C63-A7C5-730E29599067}|AccelokaDb.Entities\\AccelokaDb.Entities.csproj|solutionrelative:accelokadb.entities\\models\\tiket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\models\\bookedticketmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\models\\bookedticketmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\controllers\\bookedticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\controllers\\bookedticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\services\\bookedticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\services\\bookedticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\models\\updateticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\models\\updateticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\logs\\log-2025030920250309.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\logs\\log-2025030920250309.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74EF9D3B-C7CC-4C63-A7C5-730E29599067}|AccelokaDb.Entities\\AccelokaDb.Entities.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokadb.entities\\migrations\\initial.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{74EF9D3B-C7CC-4C63-A7C5-730E29599067}|AccelokaDb.Entities\\AccelokaDb.Entities.csproj|solutionrelative:accelokadb.entities\\migrations\\initial.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\models\\ticketsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\models\\ticketsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74EF9D3B-C7CC-4C63-A7C5-730E29599067}|AccelokaDb.Entities\\AccelokaDb.Entities.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokadb.entities\\context\\accelokadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74EF9D3B-C7CC-4C63-A7C5-730E29599067}|AccelokaDb.Entities\\AccelokaDb.Entities.csproj|solutionrelative:accelokadb.entities\\context\\accelokadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\models\\ticketbookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\models\\ticketbookingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|c:\\users\\nikol\\onedrive\\documents\\myapi\\accelistapi\\accelokanet\\accelokanet\\models\\bookedticketrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BA69817-46CE-4C3D-B598-07FA83E38199}|AccelokaNET\\AccelokaNET.csproj|solutionrelative:accelokanet\\models\\bookedticketrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 287,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tiket.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaDb.Entities\\Models\\Tiket.cs",
+              "RelativeDocumentMoniker": "AccelokaDb.Entities\\Models\\Tiket.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaDb.Entities\\Models\\Tiket.cs",
+              "RelativeToolTip": "AccelokaDb.Entities\\Models\\Tiket.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T03:09:41.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "initial.sql",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaDb.Entities\\Migrations\\initial.sql",
+              "RelativeDocumentMoniker": "AccelokaDb.Entities\\Migrations\\initial.sql",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaDb.Entities\\Migrations\\initial.sql",
+              "RelativeToolTip": "AccelokaDb.Entities\\Migrations\\initial.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-09T14:31:55.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccelokaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaDb.Entities\\Context\\AccelokaDbContext.cs",
+              "RelativeDocumentMoniker": "AccelokaDb.Entities\\Context\\AccelokaDbContext.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaDb.Entities\\Context\\AccelokaDbContext.cs",
+              "RelativeToolTip": "AccelokaDb.Entities\\Context\\AccelokaDbContext.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAwwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T14:09:08.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketService.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Services\\TicketService.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Services\\TicketService.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Services\\TicketService.cs",
+              "RelativeToolTip": "AccelokaNET\\Services\\TicketService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:56:05.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Log-2025030920250309.txt",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\logs\\Log-2025030920250309.txt",
+              "RelativeDocumentMoniker": "AccelokaNET\\logs\\Log-2025030920250309.txt",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\logs\\Log-2025030920250309.txt",
+              "RelativeToolTip": "AccelokaNET\\logs\\Log-2025030920250309.txt",
+              "ViewState": "AgIAALcEAAAAAAAAAAAAAEEIAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-09T13:54:25.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateTicketDTO.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\UpdateTicketDTO.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Models\\UpdateTicketDTO.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\UpdateTicketDTO.cs",
+              "RelativeToolTip": "AccelokaNET\\Models\\UpdateTicketDTO.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvzgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T13:46:41.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Program.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Program.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Program.cs",
+              "RelativeToolTip": "AccelokaNET\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T05:12:15.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\appsettings.json",
+              "RelativeDocumentMoniker": "AccelokaNET\\appsettings.json",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\appsettings.json",
+              "RelativeToolTip": "AccelokaNET\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T05:37:05.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "AccelokaNET\\Controllers\\TicketsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:00:26.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookedTicketController.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Controllers\\BookedTicketController.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Controllers\\BookedTicketController.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Controllers\\BookedTicketController.cs",
+              "RelativeToolTip": "AccelokaNET\\Controllers\\BookedTicketController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAswFkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:00:23.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TicketsModel.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\TicketsModel.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Models\\TicketsModel.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\TicketsModel.cs",
+              "RelativeToolTip": "AccelokaNET\\Models\\TicketsModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:00:21.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TicketBookingModel.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\TicketBookingModel.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Models\\TicketBookingModel.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\TicketBookingModel.cs",
+              "RelativeToolTip": "AccelokaNET\\Models\\TicketBookingModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:00:20.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookedTicketRequest.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\BookedTicketRequest.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Models\\BookedTicketRequest.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\BookedTicketRequest.cs",
+              "RelativeToolTip": "AccelokaNET\\Models\\BookedTicketRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:00:20.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookedTicketModel.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\BookedTicketModel.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Models\\BookedTicketModel.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Models\\BookedTicketModel.cs",
+              "RelativeToolTip": "AccelokaNET\\Models\\BookedTicketModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:00:19.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookedTicketService.cs",
+              "DocumentMoniker": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Services\\BookedTicketService.cs",
+              "RelativeDocumentMoniker": "AccelokaNET\\Services\\BookedTicketService.cs",
+              "ToolTip": "C:\\Users\\nikol\\OneDrive\\Documents\\MyApi\\AccelistApi\\AccelokaNET\\AccelokaNET\\Services\\BookedTicketService.cs",
+              "RelativeToolTip": "AccelokaNET\\Services\\BookedTicketService.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAwwOwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T03:59:38.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

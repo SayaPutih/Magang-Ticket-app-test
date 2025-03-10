@@ -1,0 +1,1145 @@
+2025-03-08 11:56:01.940 +07:00 [INF] Now listening on: http://localhost:5048
+2025-03-08 11:56:02.087 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 11:56:02.088 +07:00 [INF] Hosting environment: Development
+2025-03-08 11:56:02.089 +07:00 [INF] Content root path: C:\Users\nikol\OneDrive\Documents\MyApi\AccelistApi\AccelokaNET\AccelokaNET
+2025-03-08 11:56:03.327 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger - null null
+2025-03-08 11:56:03.693 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger - 301 0 null 369.1661ms
+2025-03-08 11:56:03.703 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 11:56:03.840 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 136.8631ms
+2025-03-08 11:56:03.862 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/swagger-ui.css - null null
+2025-03-08 11:56:03.863 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/swagger-ui-bundle.js - null null
+2025-03-08 11:56:03.866 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/swagger-ui-standalone-preset.js - null null
+2025-03-08 11:56:03.901 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-03-08 11:56:03.901 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-03-08 11:56:03.903 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/swagger-ui.css - 200 152034 text/css 40.7432ms
+2025-03-08 11:56:03.906 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 39.717ms
+2025-03-08 11:56:03.915 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 11:56:03.919 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 11:56:03.924 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 8.5512ms
+2025-03-08 11:56:03.936 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-03-08 11:56:03.937 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 73.8919ms
+2025-03-08 11:56:04.041 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.5203ms
+2025-03-08 11:56:04.387 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 11:56:04.407 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.1713ms
+2025-03-08 12:03:31.864 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:03:31.877 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/api/v1/tikets/get-all-available-tickets - 404 0 null 13.3012ms
+2025-03-08 12:03:31.882 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5048/swagger/api/v1/tikets/get-all-available-tickets, Response status code: 404
+2025-03-08 12:03:36.201 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:03:36.207 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:03:36.250 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:03:38.476 +07:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:03:38.615 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:03:38.639 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2386.2346ms
+2025-03-08 12:03:38.640 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:03:38.651 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 2449.4449ms
+2025-03-08 12:03:38.803 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/favicon.ico - null null
+2025-03-08 12:03:38.804 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/favicon.ico - 404 0 null 0.6544ms
+2025-03-08 12:03:38.804 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5048/favicon.ico, Response status code: 404
+2025-03-08 12:10:57.721 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:10:57.728 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:10:57.730 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:10:58.068 +07:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:10:58.072 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:10:58.073 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 342.0311ms
+2025-03-08 12:10:58.073 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:10:58.074 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 352.4121ms
+2025-03-08 12:11:19.984 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:11:19.989 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:11:19.990 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:11:20.059 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:11:20.060 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:11:20.060 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 70.8155ms
+2025-03-08 12:11:20.061 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:11:20.061 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 76.3199ms
+2025-03-08 12:13:02.889 +07:00 [INF] Now listening on: http://localhost:5048
+2025-03-08 12:13:02.996 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 12:13:02.996 +07:00 [INF] Hosting environment: Development
+2025-03-08 12:13:02.996 +07:00 [INF] Content root path: C:\Users\nikol\OneDrive\Documents\MyApi\AccelistApi\AccelokaNET\AccelokaNET
+2025-03-08 12:13:03.602 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 12:13:03.862 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 263.0952ms
+2025-03-08 12:13:03.928 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 12:13:03.928 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 12:13:03.932 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 4.2358ms
+2025-03-08 12:13:03.967 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.2525ms
+2025-03-08 12:13:04.250 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 12:13:04.302 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 52.0309ms
+2025-03-08 12:13:38.749 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:13:38.765 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:13:38.797 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:13:40.064 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:13:40.185 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:13:40.202 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 1401.6931ms
+2025-03-08 12:13:40.203 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:13:40.212 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 1463.4371ms
+2025-03-08 12:13:53.268 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:13:53.279 +07:00 [INF] CORS policy execution successful.
+2025-03-08 12:13:53.281 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:13:53.282 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:13:53.401 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:13:53.404 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:13:53.410 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 127.7413ms
+2025-03-08 12:13:53.410 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:13:53.411 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 143.3155ms
+2025-03-08 12:51:03.001 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:51:03.005 +07:00 [INF] CORS policy execution successful.
+2025-03-08 12:51:03.006 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:51:03.006 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:51:03.306 +07:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:51:03.308 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:51:03.310 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 303.5752ms
+2025-03-08 12:51:03.310 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:51:03.310 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 308.7734ms
+2025-03-08 12:51:26.708 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:51:26.709 +07:00 [INF] CORS policy execution successful.
+2025-03-08 12:51:26.709 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:51:26.709 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:51:26.716 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:51:26.719 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:51:26.720 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 10.7132ms
+2025-03-08 12:51:26.720 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:51:26.721 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 12.4749ms
+2025-03-08 12:51:26.723 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 12:51:26.724 +07:00 [INF] CORS policy execution successful.
+2025-03-08 12:51:26.734 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:51:26.734 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 12:51:26.741 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 12:51:26.743 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 12:51:26.743 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 8.5846ms
+2025-03-08 12:51:26.743 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 12:51:26.743 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 20.183ms
+2025-03-08 13:25:45.424 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:25:45.429 +07:00 [INF] CORS policy execution failed.
+2025-03-08 13:25:45.430 +07:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2025-03-08 13:25:45.431 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:25:45.432 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:25:45.531 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:25:45.533 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:25:45.534 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 101.8165ms
+2025-03-08 13:25:45.534 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:25:45.534 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 110.0949ms
+2025-03-08 13:27:33.904 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:27:33.916 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:27:33.917 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:27:33.920 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:27:33.921 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:27:33.921 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.2515ms
+2025-03-08 13:27:33.921 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:27:33.921 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 17.5752ms
+2025-03-08 13:27:56.572 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 13:27:56.576 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 3.7904ms
+2025-03-08 13:27:56.626 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 13:27:56.627 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 13:27:56.628 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 1.129ms
+2025-03-08 13:27:56.646 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.1198ms
+2025-03-08 13:27:57.012 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 13:27:57.035 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.095ms
+2025-03-08 13:27:58.545 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 13:27:58.548 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 2.4534ms
+2025-03-08 13:27:58.578 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 13:27:58.580 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 13:27:58.580 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.3357ms
+2025-03-08 13:27:58.589 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.7993ms
+2025-03-08 13:27:58.734 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 13:27:58.744 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.6389ms
+2025-03-08 13:28:00.161 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:28:00.163 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:28:00.163 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:28:00.165 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:28:00.166 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:28:00.166 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.9081ms
+2025-03-08 13:28:00.166 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:28:00.167 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.1271ms
+2025-03-08 13:28:04.258 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:28:04.258 +07:00 [INF] CORS policy execution failed.
+2025-03-08 13:28:04.259 +07:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2025-03-08 13:28:04.259 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:28:04.259 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:28:04.264 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:28:04.265 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:28:04.266 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 7.0403ms
+2025-03-08 13:28:04.266 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:28:04.267 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 8.7758ms
+2025-03-08 13:28:44.992 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:28:44.992 +07:00 [INF] CORS policy execution failed.
+2025-03-08 13:28:44.992 +07:00 [INF] Request origin http://localhost:3001 does not have permission to access the resource.
+2025-03-08 13:28:44.992 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:28:44.993 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:28:45.000 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:28:45.001 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:28:45.002 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 9.5214ms
+2025-03-08 13:28:45.002 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:28:45.003 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 10.988ms
+2025-03-08 13:29:42.973 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:29:42.981 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:29:42.981 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:29:42.983 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:29:42.984 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:29:42.984 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.2909ms
+2025-03-08 13:29:42.984 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:29:42.985 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 12.0791ms
+2025-03-08 13:32:44.052 +07:00 [INF] Now listening on: http://localhost:5048
+2025-03-08 13:32:44.155 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 13:32:44.155 +07:00 [INF] Hosting environment: Development
+2025-03-08 13:32:44.156 +07:00 [INF] Content root path: C:\Users\nikol\OneDrive\Documents\MyApi\AccelistApi\AccelokaNET\AccelokaNET
+2025-03-08 13:32:44.415 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 13:32:44.644 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 229.6474ms
+2025-03-08 13:32:44.681 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 13:32:44.681 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 13:32:44.684 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.8408ms
+2025-03-08 13:32:44.729 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.8034ms
+2025-03-08 13:32:44.847 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 13:32:44.858 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.1387ms
+2025-03-08 13:32:49.246 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:32:49.256 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:32:49.276 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:32:51.150 +07:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:32:51.246 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:32:51.263 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 1984.4168ms
+2025-03-08 13:32:51.264 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:32:51.272 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 2025.7915ms
+2025-03-08 13:33:12.123 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:33:12.135 +07:00 [INF] CORS policy execution successful.
+2025-03-08 13:33:12.137 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:33:12.137 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:33:12.206 +07:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:33:12.209 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:33:12.212 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 74.4018ms
+2025-03-08 13:33:12.212 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:33:12.213 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 89.5703ms
+2025-03-08 13:41:20.352 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:41:20.361 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:41:20.361 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:41:20.561 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:41:20.562 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:41:20.562 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 201.0232ms
+2025-03-08 13:41:20.562 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:41:20.562 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 209.9139ms
+2025-03-08 13:43:48.992 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:43:48.996 +07:00 [INF] CORS policy execution successful.
+2025-03-08 13:43:48.997 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:43:48.997 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:43:49.012 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:43:49.016 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:43:49.020 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 22.1684ms
+2025-03-08 13:43:49.021 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:43:49.021 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 29.5588ms
+2025-03-08 13:51:29.494 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 13:51:29.496 +07:00 [INF] CORS policy execution successful.
+2025-03-08 13:51:29.496 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:51:29.496 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 13:51:29.597 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 13:51:29.598 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 13:51:29.599 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 102.5715ms
+2025-03-08 13:51:29.599 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 13:51:29.599 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 105.1642ms
+2025-03-08 14:09:08.792 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:09:08.794 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:09:08.795 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:09:08.796 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:09:08.947 +07:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:09:08.949 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:09:08.950 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 153.4329ms
+2025-03-08 14:09:08.950 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:09:08.951 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 158.1599ms
+2025-03-08 14:12:59.577 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:12:59.578 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:12:59.579 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:12:59.579 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:12:59.587 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:12:59.593 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:12:59.594 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 14.7756ms
+2025-03-08 14:12:59.594 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:12:59.595 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 17.6929ms
+2025-03-08 14:21:59.897 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:21:59.898 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:21:59.899 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:21:59.899 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:22:00.010 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:22:00.012 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:22:00.016 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 116.7339ms
+2025-03-08 14:22:00.017 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:22:00.017 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 120.5671ms
+2025-03-08 14:22:41.763 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:22:41.764 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:22:41.764 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:22:41.765 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:22:41.774 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:22:41.783 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:22:41.784 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 18.3586ms
+2025-03-08 14:22:41.784 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:22:41.784 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 21.5566ms
+2025-03-08 14:23:59.533 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:23:59.533 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:23:59.534 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:23:59.534 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:23:59.541 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:23:59.542 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:23:59.542 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 8.0547ms
+2025-03-08 14:23:59.542 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:23:59.543 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 10.0079ms
+2025-03-08 14:23:59.550 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:23:59.551 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:23:59.551 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:23:59.552 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:23:59.560 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:23:59.564 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:23:59.566 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 13.6613ms
+2025-03-08 14:23:59.566 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:23:59.566 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 16.1898ms
+2025-03-08 14:24:03.136 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:24:03.137 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:24:03.137 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:03.138 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:24:03.142 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:24:03.143 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:24:03.144 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.8603ms
+2025-03-08 14:24:03.144 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:03.144 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.2695ms
+2025-03-08 14:24:03.148 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:24:03.149 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:24:03.149 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:03.149 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:24:03.153 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:24:03.154 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:24:03.154 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.7115ms
+2025-03-08 14:24:03.154 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:03.154 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.9478ms
+2025-03-08 14:24:40.238 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:24:40.238 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:24:40.239 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:40.239 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:24:40.243 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:24:40.244 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:24:40.245 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.3817ms
+2025-03-08 14:24:40.245 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:40.246 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.9301ms
+2025-03-08 14:24:40.254 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:24:40.254 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:24:40.255 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:40.255 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:24:40.261 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:24:40.262 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:24:40.262 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 7.6136ms
+2025-03-08 14:24:40.263 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:24:40.263 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 9.2043ms
+2025-03-08 14:35:03.309 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:35:03.310 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:35:03.310 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:35:03.311 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:35:03.379 +07:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:35:03.380 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:35:03.380 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 69.6288ms
+2025-03-08 14:35:03.380 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:35:03.381 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 72.0854ms
+2025-03-08 14:35:28.396 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:35:28.396 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:35:28.397 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:35:28.397 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:35:28.404 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:35:28.405 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:35:28.406 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 9.0844ms
+2025-03-08 14:35:28.406 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:35:28.407 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 10.6157ms
+2025-03-08 14:36:14.066 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:36:14.067 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:36:14.067 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:14.068 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:36:14.073 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:36:14.073 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:36:14.074 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.0203ms
+2025-03-08 14:36:14.074 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:14.074 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.4652ms
+2025-03-08 14:36:24.984 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:36:24.985 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:36:24.985 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:24.986 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:36:24.991 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:36:24.993 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:36:24.993 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 7.6004ms
+2025-03-08 14:36:24.994 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:24.994 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 9.5952ms
+2025-03-08 14:36:24.997 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:36:24.998 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:36:24.998 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:24.998 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:36:25.002 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:36:25.003 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:36:25.004 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.7056ms
+2025-03-08 14:36:25.004 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:25.004 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.8564ms
+2025-03-08 14:36:29.529 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:36:29.529 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:36:29.529 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:29.529 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:36:29.534 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:36:29.536 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:36:29.537 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.8838ms
+2025-03-08 14:36:29.538 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:29.538 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 9.3547ms
+2025-03-08 14:36:29.540 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:36:29.540 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:36:29.541 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:29.541 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:36:29.546 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:36:29.547 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:36:29.547 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.4902ms
+2025-03-08 14:36:29.547 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:36:29.547 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.5608ms
+2025-03-08 14:37:42.655 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:37:42.656 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:37:42.656 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:37:42.656 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:37:42.662 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:37:42.663 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:37:42.667 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 10.5441ms
+2025-03-08 14:37:42.667 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:37:42.669 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 13.8385ms
+2025-03-08 14:38:00.280 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:38:00.281 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:38:00.281 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:38:00.281 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:38:00.288 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:38:00.290 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:38:00.291 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 9.1663ms
+2025-03-08 14:38:00.291 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:38:00.291 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 10.4581ms
+2025-03-08 14:38:00.294 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:38:00.294 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:38:00.294 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:38:00.295 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:38:00.298 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:38:00.298 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:38:00.299 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.9672ms
+2025-03-08 14:38:00.299 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:38:00.299 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.0139ms
+2025-03-08 14:39:31.683 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:39:31.684 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:39:31.684 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:39:31.684 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:39:31.700 +07:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:39:31.701 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:39:31.701 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 17.0649ms
+2025-03-08 14:39:31.701 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:39:31.702 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 18.5629ms
+2025-03-08 14:39:31.704 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:39:31.705 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:39:31.705 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:39:31.705 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:39:31.709 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:39:31.711 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:39:31.712 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.1426ms
+2025-03-08 14:39:31.712 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:39:31.712 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.5194ms
+2025-03-08 14:40:55.931 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:40:55.931 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:40:55.932 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:40:55.932 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:40:56.011 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:40:56.011 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:40:56.011 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 79.4082ms
+2025-03-08 14:40:56.011 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:40:56.012 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 80.767ms
+2025-03-08 14:40:56.013 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:40:56.013 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:40:56.013 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:40:56.014 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:40:56.015 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:40:56.016 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:40:56.016 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.1897ms
+2025-03-08 14:40:56.016 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:40:56.016 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 2.7143ms
+2025-03-08 14:41:36.964 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:36.965 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:36.966 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:36.966 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:36.970 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:36.972 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:36.975 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 8.6593ms
+2025-03-08 14:41:36.976 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:36.976 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 11.4383ms
+2025-03-08 14:41:36.979 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:36.979 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:36.979 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:36.980 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:36.987 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:36.988 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:36.990 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 9.5603ms
+2025-03-08 14:41:36.990 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:36.990 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 11.3528ms
+2025-03-08 14:41:37.924 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:37.925 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:37.925 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:37.925 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:37.929 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:37.930 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:37.930 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.9624ms
+2025-03-08 14:41:37.930 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:37.930 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.1585ms
+2025-03-08 14:41:37.931 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:37.932 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:37.933 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:37.933 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:37.937 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:37.937 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:37.938 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.1468ms
+2025-03-08 14:41:37.938 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:37.938 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.8451ms
+2025-03-08 14:41:38.864 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:38.864 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:38.864 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:38.865 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:38.870 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:38.871 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:38.871 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.5941ms
+2025-03-08 14:41:38.871 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:38.871 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.6854ms
+2025-03-08 14:41:38.873 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:38.873 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:38.873 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:38.873 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:38.881 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:38.882 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:38.882 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.0125ms
+2025-03-08 14:41:38.882 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:38.883 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 9.5745ms
+2025-03-08 14:41:54.422 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:54.423 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:54.423 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.423 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:54.426 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:54.427 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:54.427 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.5327ms
+2025-03-08 14:41:54.427 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.427 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.3256ms
+2025-03-08 14:41:54.428 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:54.428 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:54.428 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.428 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:54.431 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:54.431 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:54.432 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.5489ms
+2025-03-08 14:41:54.432 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.432 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 3.9609ms
+2025-03-08 14:41:54.825 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:54.825 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:54.825 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.825 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:54.830 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:54.831 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:54.831 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.7717ms
+2025-03-08 14:41:54.831 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.832 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.5688ms
+2025-03-08 14:41:54.833 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:54.833 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:54.833 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.834 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:54.837 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:54.838 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:54.838 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.3723ms
+2025-03-08 14:41:54.838 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:54.838 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.3244ms
+2025-03-08 14:41:55.614 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:55.615 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:55.615 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:55.615 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:55.617 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:55.618 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:55.618 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.4739ms
+2025-03-08 14:41:55.618 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:55.619 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 4.1156ms
+2025-03-08 14:41:55.620 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:55.620 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:55.620 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:55.620 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:55.624 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:55.624 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:55.625 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.3311ms
+2025-03-08 14:41:55.625 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:55.625 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.0462ms
+2025-03-08 14:41:56.403 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:56.403 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:56.403 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.403 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:56.405 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:56.406 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:56.406 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.97ms
+2025-03-08 14:41:56.406 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.406 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 3.5948ms
+2025-03-08 14:41:56.410 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:56.411 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:56.411 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.411 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:56.413 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:56.413 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:56.413 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.5805ms
+2025-03-08 14:41:56.413 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.413 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 3.2563ms
+2025-03-08 14:41:56.790 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:56.790 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:56.790 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.790 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:56.792 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:56.793 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:56.793 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.5888ms
+2025-03-08 14:41:56.793 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.793 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 3.1332ms
+2025-03-08 14:41:56.796 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:56.797 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:56.797 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.797 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:56.801 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:56.802 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:56.802 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.1272ms
+2025-03-08 14:41:56.802 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:56.803 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.6348ms
+2025-03-08 14:41:59.201 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:59.202 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:59.202 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:59.202 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:59.205 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:59.207 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:59.207 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.0605ms
+2025-03-08 14:41:59.207 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:59.207 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.3491ms
+2025-03-08 14:41:59.208 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:41:59.209 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:41:59.209 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:59.209 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:41:59.211 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:41:59.212 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:41:59.216 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.6311ms
+2025-03-08 14:41:59.216 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:41:59.216 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.6071ms
+2025-03-08 14:43:22.598 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:43:22.599 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:43:22.599 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:43:22.599 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:43:22.603 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:43:22.604 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:43:22.605 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.7051ms
+2025-03-08 14:43:22.605 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:43:22.605 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.6817ms
+2025-03-08 14:43:34.975 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:43:34.976 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:43:34.976 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:43:34.976 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:43:34.980 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:43:34.980 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:43:34.980 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.0399ms
+2025-03-08 14:43:34.980 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:43:34.980 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 4.8934ms
+2025-03-08 14:43:34.981 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:43:34.981 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:43:34.981 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:43:34.981 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:43:34.985 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:43:34.985 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:43:34.986 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.5747ms
+2025-03-08 14:43:34.986 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:43:34.986 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.1009ms
+2025-03-08 14:47:25.192 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:47:25.192 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:47:25.192 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:47:25.193 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:47:25.263 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:47:25.263 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:47:25.264 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 71.1352ms
+2025-03-08 14:47:25.264 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:47:25.264 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 72.1457ms
+2025-03-08 14:48:20.840 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:48:20.841 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:48:20.841 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:48:20.841 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:48:20.844 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:48:20.844 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:48:20.845 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.6832ms
+2025-03-08 14:48:20.845 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:48:20.845 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 4.5963ms
+2025-03-08 14:49:17.027 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:17.028 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:17.028 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:17.028 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:17.033 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:17.035 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:17.035 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 7.239ms
+2025-03-08 14:49:17.035 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:17.036 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 8.1396ms
+2025-03-08 14:49:20.586 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:20.586 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:20.586 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:20.586 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:20.594 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:20.595 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:20.595 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 8.655ms
+2025-03-08 14:49:20.595 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:20.595 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 9.7677ms
+2025-03-08 14:49:20.600 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:20.600 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:20.600 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:20.600 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:20.604 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:20.605 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:20.605 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.9485ms
+2025-03-08 14:49:20.605 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:20.606 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.693ms
+2025-03-08 14:49:21.958 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:21.959 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:21.959 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:21.959 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:21.961 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:21.962 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:21.963 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 3.845ms
+2025-03-08 14:49:21.963 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:21.963 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 4.9804ms
+2025-03-08 14:49:21.965 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:21.965 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:21.966 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:21.966 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:21.971 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:21.972 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:21.972 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 6.0898ms
+2025-03-08 14:49:21.972 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:21.973 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.987ms
+2025-03-08 14:49:22.841 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:22.841 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:22.841 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:22.842 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:22.846 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:22.846 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:22.846 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.7301ms
+2025-03-08 14:49:22.846 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:22.847 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.5941ms
+2025-03-08 14:49:22.847 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:22.847 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:22.847 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:22.848 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:22.850 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:22.851 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:22.852 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.0762ms
+2025-03-08 14:49:22.852 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:22.852 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 4.6597ms
+2025-03-08 14:49:35.846 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:35.846 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:35.847 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:35.847 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:35.853 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:35.854 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:35.854 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 7.6853ms
+2025-03-08 14:49:35.855 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:35.855 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 8.6838ms
+2025-03-08 14:49:35.858 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:49:35.859 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:49:35.859 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:35.859 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:49:35.864 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:49:35.865 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:49:35.865 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.7454ms
+2025-03-08 14:49:35.865 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:49:35.866 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.1111ms
+2025-03-08 14:50:45.360 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:50:45.360 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:50:45.360 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:50:45.360 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:50:45.362 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:50:45.362 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:50:45.362 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.2248ms
+2025-03-08 14:50:45.362 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:50:45.363 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 2.7733ms
+2025-03-08 14:50:52.804 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:50:52.804 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:50:52.805 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:50:52.805 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:50:52.807 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:50:52.807 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:50:52.808 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 2.8755ms
+2025-03-08 14:50:52.808 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:50:52.808 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 3.8836ms
+2025-03-08 14:51:10.107 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:51:10.107 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:51:10.107 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:10.108 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:51:10.112 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:51:10.113 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:51:10.113 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.784ms
+2025-03-08 14:51:10.114 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:10.114 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 6.7334ms
+2025-03-08 14:51:10.115 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:51:10.115 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:51:10.115 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:10.115 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:51:10.120 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:51:10.120 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:51:10.120 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 5.2367ms
+2025-03-08 14:51:10.120 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:10.120 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.8269ms
+2025-03-08 14:51:59.621 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:51:59.622 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:51:59.622 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:59.622 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:51:59.626 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:51:59.627 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:51:59.627 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 4.8052ms
+2025-03-08 14:51:59.627 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:59.627 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 5.5132ms
+2025-03-08 14:51:59.636 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - null null
+2025-03-08 14:51:59.636 +07:00 [INF] CORS policy execution successful.
+2025-03-08 14:51:59.636 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:59.636 +07:00 [INF] Route matched with {action = "GetAllAvailableTickets", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAvailableTickets() on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:51:59.642 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.harga, t.kode_tiket, t.nama_kategori, t.nama_tiket, t.sisa_quota, t.tanggal_event
+FROM tickets AS t
+WHERE t.sisa_quota > 0
+ORDER BY t.kode_tiket
+2025-03-08 14:51:59.643 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[AccelokaDb.Entities.Models.Tiket, AccelokaDb.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-03-08 14:51:59.643 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET) in 7.0257ms
+2025-03-08 14:51:59.643 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.GetAllAvailableTickets (AccelokaNET)'
+2025-03-08 14:51:59.644 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/api/v1/tikets/get-all-available-tickets - 200 null application/json; charset=utf-8 7.5259ms
+2025-03-08 14:54:53.638 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 14:54:53.664 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 26.2115ms
+2025-03-08 14:54:53.717 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 14:54:53.736 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 14:54:53.736 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 0.8238ms
+2025-03-08 14:54:53.742 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.9621ms
+2025-03-08 14:54:53.924 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 14:54:53.958 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.6111ms
+2025-03-08 14:57:18.829 +07:00 [INF] Now listening on: http://localhost:5048
+2025-03-08 14:57:18.911 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-08 14:57:18.912 +07:00 [INF] Hosting environment: Development
+2025-03-08 14:57:18.912 +07:00 [INF] Content root path: C:\Users\nikol\OneDrive\Documents\MyApi\AccelistApi\AccelokaNET\AccelokaNET
+2025-03-08 14:57:19.334 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2025-03-08 14:57:19.484 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 150.4288ms
+2025-03-08 14:57:19.541 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_vs/browserLink - null null
+2025-03-08 14:57:19.544 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - null null
+2025-03-08 14:57:19.548 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 3.6297ms
+2025-03-08 14:57:19.588 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.9601ms
+2025-03-08 14:57:19.755 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2025-03-08 14:57:19.773 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.9804ms
+2025-03-08 14:57:48.884 +07:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5048/api/v1/tikets/update-ticket/8 - application/json 358
+2025-03-08 14:57:48.891 +07:00 [INF] CORS policy execution failed.
+2025-03-08 14:57:48.892 +07:00 [INF] Request origin http://localhost:5048 does not have permission to access the resource.
+2025-03-08 14:57:48.896 +07:00 [INF] Executing endpoint 'Acceloka.API.Controllers.TiketController.UpdateTicket (AccelokaNET)'
+2025-03-08 14:57:48.942 +07:00 [INF] Route matched with {action = "UpdateTicket", controller = "Tiket"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTicket(Int32, AccelokaDb.Entities.Models.Tiket) on controller Acceloka.API.Controllers.TiketController (AccelokaNET).
+2025-03-08 14:57:49.143 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-03-08 14:57:49.163 +07:00 [INF] Executed action Acceloka.API.Controllers.TiketController.UpdateTicket (AccelokaNET) in 218.8866ms
+2025-03-08 14:57:49.163 +07:00 [INF] Executed endpoint 'Acceloka.API.Controllers.TiketController.UpdateTicket (AccelokaNET)'
+2025-03-08 14:57:49.164 +07:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5048/api/v1/tikets/update-ticket/8 - 400 null application/problem+json; charset=utf-8 280.4824ms
